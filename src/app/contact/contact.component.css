@@ -17,12 +17,30 @@ input:focus {
   color: white;
   font-weight: 700;
 }
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+textarea {
+  transition: background-color 0.5s ease;
+}
+textarea::placeholder {
+  font-weight: 700;
+  color: white;
+}
+
+textarea:focus {
+  background-color: #f0bb78;
+  color: white;
+  font-weight: 700;
+}
 .btn {
   background-color: #543a14;
   color: white;
 }
 .new {
-  height: 450px;
+  height: 400px;
   width: 50%;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -31,8 +49,4 @@ input:focus {
   backdrop-filter: blur(10px);
 
   margin: auto;
-}
-a {
-  text-decoration: none;
-  color: white;
 }

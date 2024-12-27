@@ -4,9 +4,9 @@
       <div class="container-fluid">
         <a
           class="navbar-brand"
-          href="javascript:void(0)"
-          style="font-size: 2.5rem; color: #543a14; text-shadow: 0 0 2px white"
-          >Logo</a
+          href="/"
+          style="font-size: 2.5rem; color: white; font-weight: 750"
+          ><em>PATHAN</em></a
         >
         <button
           class="navbar-toggler"
@@ -25,14 +25,23 @@
               <a class="nav-link" href="javascript:void(0)">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
+            @if(user=='none') {
             <li class="nav-item">
               <a class="nav-link" href="/sign_up">Sign up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Log in</a>
+              <a class="nav-link" href="/log_in">Log in</a>
             </li>
+            } @else {
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log out</a>
+            </li>
+            }
           </ul>
         </div>
       </div>

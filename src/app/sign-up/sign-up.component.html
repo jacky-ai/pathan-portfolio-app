@@ -2,34 +2,53 @@
   <div class="container text-center mt-5">
     <form action="">
       <div class="new">
-        <h2 class="fs-1 fw-bold mb-5 mt-2">Ragistration form</h2>
+        <h2 class="fs-1 fw-bold mb-2 mt-2">Create account</h2>
+        <h2 class="fs-5 fw-bold mb-4">
+          Already have an account ?
+          <span><a href="/log_in"> Log In </a></span>
+        </h2>
         <input
           type="text"
           class="form-control w-10 mx-auto mb-3"
           placeholder="Enter your first name"
+          [(ngModel)]="fname"
+          name="fname"
+          required
         />
         <input
           type="text"
           class="form-control w-10 mx-auto mb-3"
           placeholder="Enter your last name"
+          [(ngModel)]="lname"
+          name="lname"
+          required
         />
         <input
           type="number"
           class="form-control w-10 mx-auto mb-3"
           placeholder="Enter your number"
+          [(ngModel)]="phone"
+          name="phone"
+          required
         />
         <input
           type="email"
           class="form-control w-10 mx-auto mb-3"
           placeholder="Enter your email"
+          [(ngModel)]="email"
+          name="email"
+          required
         />
         <input
           type="password"
           class="form-control w-10 mx-auto"
           placeholder="Enter your password"
+          [(ngModel)]="password"
+          name="password"
+          required
         />
         <div class="mt-4">
-          <button class="btn w-50 fw-bold">Submit</button>
+          <button class="btn w-50 fw-bold" (click)="sign_up()">Submit</button>
         </div>
       </div>
     </form>

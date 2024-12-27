@@ -1,0 +1,28 @@
+<section>
+  <div class="container text-center mt-5">
+    <form action="">
+      <div class="new">
+        <h2 class="fs-1 fw-bold mt-2">Welcome again...</h2>
+        <h2 class="fs-5 fw-bold mb-5">
+          You don't have account ? <span><a href="/sign_up">Sign up</a></span>
+        </h2>
+
+        <input
+          type="email"
+          class="form-control w-10 mx-auto mb-3"
+          placeholder="Enter your email"
+          [(ngModel)]="email"
+        />
+        <input
+          type="password"
+          class="form-control w-10 mx-auto"
+          placeholder="Enter your password"
+          [(ngModel)]="password"
+        />
+        <div class="mt-4">
+          <button class="btn w-50 fw-bold" (click)="log_in()">Log In</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -4,8 +4,19 @@ import { Component } from '@angular/core';
   selector: 'app-navbar',
   imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
+  user!: any;
+  constructor() {
+    this.user = localStorage.getItem('uname');
+    if (this.user == undefined) {
+      this.user = 'none';
+    }
+  }
 
+  logout() {
+    localStorage.clear();
+    location.reload();
+  }
 }
