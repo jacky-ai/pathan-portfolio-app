@@ -22,8 +22,8 @@ input:focus {
   color: white;
 }
 .new {
-  height: 340px;
-  width: 50%;
+  height: 300px;
+  width: 100%;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 25px 50px rgba(79, 77, 77, 0.2);

@@ -20,7 +20,7 @@ export class SignUpComponent {
   sign_up() {
     this.ht
       .get(
-        'http://localhost/htdocs/pathan-portfolio/sign_up.php?x1=' +
+        'http://localhost/pathan-portfolio/sign_up.php?x1=' +
           this.fname +
           '&x2=' +
           this.lname +
