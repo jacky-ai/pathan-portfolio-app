@@ -36,10 +36,12 @@
             </li>
             } @else {
             <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link" href="/profile">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Log out</a>
+              <a class="nav-link" href="#" (click)="logout()"
+                ><button>Log out</button></a
+              >
             </li>
             }
           </ul>

@@ -34,6 +34,5 @@ export class SignUpComponent {
       .subscribe((result: any) => {
         this.success = 'THANKS FOR SIGNING...';
       });
-    console.log(this.ht);
   }
 }

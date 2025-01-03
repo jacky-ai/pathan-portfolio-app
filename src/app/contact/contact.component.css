@@ -26,13 +26,13 @@ textarea {
   transition: background-color 0.5s ease;
 }
 textarea::placeholder {
-  font-weight: 700;
   color: white;
+  font-weight: 700;
 }
 
 textarea:focus {
-  background-color: #f0bb78;
   color: white;
+  background-color: #f0bb78;
   font-weight: 700;
 }
 .btn {
@@ -40,7 +40,7 @@ textarea:focus {
   color: white;
 }
 .new {
-  height: 400px;
+  height: 450px;
   width: 100%;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
