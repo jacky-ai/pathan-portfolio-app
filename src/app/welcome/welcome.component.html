@@ -220,10 +220,17 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 mt-5">
+      <div class="col-md-4 mt-5" style="padding-left: 7rem">
         <img
           src="https://www.pngall.com/wp-content/uploads/5/Profile-Male-PNG.png"
           alt=""
+          style="
+            height: 150px;
+            border-radius: 73px;
+            border: 1.5px solid rgba(245, 245, 245, 0.2);
+            background: transparent;
+            box-shadow: 0 25px 50px rgba(79, 77, 77, 0.2);
+          "
         />
       </div>
       <div class="col-md-8 mt-5">
@@ -240,4 +247,34 @@
   </div>
 </div>
 
-<script></script>
+<!--message form-->
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <label for="">First Name :</label>&nbsp; <input type="text" />&nbsp;
+      &nbsp; <label for="">Last Name : &nbsp;</label><input type="text" />
+    </div>
+  </div>
+</section> -->
+
+<div class="container">
+  <form>
+    <div>
+      <input placeholder="Enter your name" />
+    </div>
+
+    <div>
+      <input placeholder="Enter your email" />
+    </div>
+
+    <div>
+      <textarea
+        id="message"
+        formControlName="message"
+        placeholder="Enter your message"
+      ></textarea>
+    </div>
+
+    <button type="submit">Message me</button>
+  </form>
+</div>
